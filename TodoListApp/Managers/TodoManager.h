@@ -10,8 +10,10 @@
 
 @interface TodoManager : NSObject
 
+@property NSMutableArray *items;
+
 + (instancetype)sharedManager;
 
-@property NSMutableArray *items;
+- (void)save;
 
 @end

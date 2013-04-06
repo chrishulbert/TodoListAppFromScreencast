@@ -35,6 +35,7 @@
     newItem.title = _newTodoItemView.title.text;
     
     [[TodoManager sharedManager].items addObject:newItem];
+    [[TodoManager sharedManager] save];
     
     [self.navigationController popViewControllerAnimated:YES];
 }

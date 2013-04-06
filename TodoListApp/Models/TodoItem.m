@@ -10,4 +10,15 @@
 
 @implementation TodoItem
 
+- (id)initWithJsonDictionary:(NSDictionary *)json {
+    if (self = [super init]) {
+        _title = json[@"title"];
+    }
+    return self;
+}
+
+- (NSDictionary *)jsonDictionary {
+    return @{@"title": _title};
+}
+
 @end

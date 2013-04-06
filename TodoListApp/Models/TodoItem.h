@@ -12,4 +12,8 @@
 
 @property NSString *title;
 
+- (id)initWithJsonDictionary:(NSDictionary *)json;
+
+- (NSDictionary *)jsonDictionary;
+
 @end
